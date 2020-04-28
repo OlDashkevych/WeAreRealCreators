@@ -1,0 +1,40 @@
+.form-section {
+  padding: 30px 0;
+  background-color: $accent-gray;
+
+  input {
+    background-color: lighten($accent-gray, 6%);
+  }
+
+  form {
+    grid-gap: $gutter;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .button {
+    font-size: 17px;
+    padding: 14.5px;
+    width: 100%;
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+input,
+textarea {
+  border: none;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  outline: none;
+  transition: background-color 0.25s ease;
+
+  &:focus {
+    background-color: $light-gray;
+  }
+
+  &::placeholder {
+    color: lighten($accent-gray, 20%);
+  }
+}
